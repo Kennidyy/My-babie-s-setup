@@ -1,6 +1,6 @@
 { lib, pkgs, ... }: {
   imports =
-    [ ./hardware-configuration.nix ../../modules/nixos/server ../../modules/nixos/core ]
+    [ ../../modules/nixos/server ../../modules/nixos/core ]
     ++ lib.optionals (builtins.pathExists /home/tux/.secrets/server.nix) [ (import /home/tux/.secrets/server.nix) ];
 
   system.activationScripts.secretsTemplate = ''
