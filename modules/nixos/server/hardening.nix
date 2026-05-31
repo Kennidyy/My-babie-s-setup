@@ -14,7 +14,7 @@
   services.opensnitch = { };
 
   hardware.bluetooth.enable = false;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   hardware.sane.enable = false;
   hardware.enableRedistributableFirmware = false;
 
